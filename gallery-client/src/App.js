@@ -102,7 +102,7 @@ function App() {
 
     return (
       <>
-        <div className="block">
+        <div className="block mh250">
           <h1 className="block-header">Gallery</h1>
           <h4 className="block-under-header">Искусство и не только</h4>
           <button
@@ -238,9 +238,7 @@ function App() {
     if (page === 1) return;
     setPage(page - 1);
   }
-  async function updateData(data) {
-    
-  }
+  async function updateData(data) {}
 
   async function editCard(id) {
     console.log("sada");
@@ -254,7 +252,7 @@ function App() {
     for (let i = page * 5 - 4; i < page * 5; i++) {
       data.push(
         <>
-          <div className="block color mb15">
+          <div className="block shadow color mb15">
             <h1 className="block-header">{photos[i].Title}</h1>
             <h3 className="block-under-header">{photos[i].Author}</h3>
             <img
@@ -338,7 +336,16 @@ function App() {
 
   return (
     <>
-      <div className="app">{content}</div>
+      <div className="app">
+        <div className="app-block">{content}</div>
+        <div className="app-block">
+          <h1 className="footer">
+            "ООО" Галерея
+            <br />
+            Московская ул., 14, Можайск
+          </h1>
+        </div>
+      </div>
     </>
   );
 }

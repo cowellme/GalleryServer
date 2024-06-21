@@ -1,42 +1,45 @@
-@font-face {
-  font-family: "Manrope";
-  src: url("./fonts/Manrope.ttf");
+#root {
+
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+  height: 100vh;
 }
 
-
-#root{
-  
-  font-family: "Manrope";
-width: 100%;
-height: 100vh;
-}
-
-.app{
+.app {
   width: calc(100% - 10px);
   padding: 5px;
-
 }
 
-.block{
+.app-block{
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+
+.block {
   width: calc(100% - 20px);
   padding: 10px;
   border-radius: 10px;
   justify-content: space-between;
   flex-wrap: nowrap;
+  
+}
+.shadow{
+  
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.text-name{
+.text-name {
   font-size: 20px;
   font-weight: 700;
   margin: 10px;
 }
 
-.contact{
+.contact {
   font-size: 20px;
 }
 
-.block-back{
-  margin-top: 12px;
+.block-back {
+  margin-top: 8px;
   margin-right: 20px;
   padding: 0;
   width: 30px;
@@ -47,10 +50,10 @@ height: 100vh;
   background-image: url("./pngs/arrow.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: rgba(240, 248, 255, 0); 
+  background-color: rgba(240, 248, 255, 0);
 }
 
-.block-close{
+.block-close {
   margin-top: 10px;
   margin-right: 10px;
   padding: 0;
@@ -61,24 +64,24 @@ height: 100vh;
   background-image: url("./pngs/close.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: rgba(240, 248, 255, 0); 
+  background-color: rgba(240, 248, 255, 0);
 }
 
-.block-header{
-  
+.block-header {
+  font-weight: 500;
   display: flex;
   width: max-content;
-  padding-left: 10px ;
+  padding-left: 10px;
   margin: 0;
 }
 
-.block-main-text{
-  font-family: "Manrope";
+.block-main-text {
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
   font-size: 17px;
 }
 
-.text{
+.text {
   font-weight: 600;
   font-size: 17px;
   width: calc(100% - 40px);
@@ -86,59 +89,70 @@ height: 100vh;
   background-color: bisque;
 }
 
-.block-under-header{
+.block-under-header {
   width: max-content;
-  padding-left: 10px ;
+  padding-left: 10px;
+  font-weight: 600;
   margin: 0;
   margin-bottom: 20px;
 }
 
-.price{
+.price {
   float: right;
   margin-right: 15px;
 }
 
-.color{
+.color {
   background-color: #e2e5ee;
 }
 
-.block-photo{
+.block-photo {
   width: calc(100% - 20px);
   border-radius: 5px;
   margin: 10px;
 }
 
-.image{
+.image {
   background-color: #e2e5ee;
   margin-bottom: 10px;
 }
 
-.blcok-button{
+.blcok-button {
   width: calc(100% - 20px);
   height: 55px;
   border-radius: 5px;
   border: 0;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
   background-color: bisque;
+  color: black;
   margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-shadow: 1px 1px 4px #b39b7fa4;
 }
 
-.select{
+.select {
   width: calc(100% - 40px);
   background-color: bisque;
   margin: 10px;
   border-radius: 5px;
 }
 
-.semi{
+.semi {
   width: calc(50% - 20px);
 }
 
-.mb15{
+.mb15 {
   margin-bottom: 15px;
 }
-.mt25{
+
+.mt25 {
   margin-top: 25px;
+}
+
+.mh250{
+  height: 790px;
 }
 
 .loading {
@@ -149,7 +163,7 @@ height: 100vh;
 
 .spinner {
   margin-top: 30px;
-  
+
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-top: 2px solid black;
   border-radius: 50%;
@@ -157,23 +171,42 @@ height: 100vh;
   height: 50px;
   animation: spin 1s linear infinite;
 }
-.contact-a{
+.footer{
+  font-family: "Manrope", sans-serif;
+  color: gray;
+  font-weight: 200;
+  font-size: 23px;
+  padding-left: 22px;
+  
+  margin: 0;
+}
+.contact-a {
   float: inline-end;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(60deg); }
-  
-  20% { transform: rotate(180deg); }
-  
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(60deg);
+  }
+
+  20% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.black{
-  
-  font-family: "Manrope";
+.black {
+
+  font-family: "Manrope", sans-serif;
   background-color: black;
   color: aliceblue;
   font-weight: 700;
+  font-size: 20px;
 }
