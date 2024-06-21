@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("./fonts/Manrope.ttf");
+}
+
+
+#root{
+  
+  font-family: "Manrope";
+width: 100%;
+height: 100vh;
+}
+
+.app{
+  width: calc(100% - 10px);
+  padding: 5px;
+
+}
+
+.block{
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.text-name{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.contact{
+  font-size: 20px;
+}
+
+.block-back{
+  margin-top: 12px;
+  margin-right: 20px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: inline;
+  float: inline-start;
+  border: 0;
+  background-image: url("./pngs/arrow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(240, 248, 255, 0); 
+}
+
+.block-close{
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  float: inline-end;
+  border: 0;
+  background-image: url("./pngs/close.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(240, 248, 255, 0); 
+}
+
+.block-header{
+  
+  display: flex;
+  width: max-content;
+  padding-left: 10px ;
+  margin: 0;
+}
+
+.block-main-text{
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.text{
+  font-weight: 600;
+  font-size: 17px;
+  width: calc(100% - 40px);
+  padding: 20px;
+  background-color: bisque;
+}
+
+.block-under-header{
+  width: max-content;
+  padding-left: 10px ;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.price{
+  float: right;
+  margin-right: 15px;
+}
+
+.color{
+  background-color: #e2e5ee;
+}
+
+.block-photo{
+  width: calc(100% - 20px);
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.image{
+  background-color: #e2e5ee;
+  margin-bottom: 10px;
+}
+
+.blcok-button{
+  width: calc(100% - 20px);
+  height: 55px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  background-color: bisque;
+  margin: 10px;
+}
+
+.select{
+  width: calc(100% - 40px);
+  background-color: bisque;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.semi{
+  width: calc(50% - 20px);
+}
+
+.mb15{
+  margin-bottom: 15px;
+}
+.mt25{
+  margin-top: 25px;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spinner {
+  margin-top: 30px;
+  
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+.contact-a{
+  float: inline-end;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(60deg); }
+  
+  20% { transform: rotate(180deg); }
+  
+  100% { transform: rotate(360deg); }
+}
+
+.black{
+  
+  font-family: "Manrope";
+  background-color: black;
+  color: aliceblue;
+  font-weight: 700;
+}

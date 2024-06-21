@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  backend:
+    image: ${DOCKER_REGISTRY-}galleryserver
+    build:
+      context: .
+      dockerfile: GalleryServer/Dockerfile
+
+  client:
+    image: client
+    build: 
+      context: ./gallery-client
+      dockerfile: Dockerfile
+
+  proxy:
+    image: nginx:mainline

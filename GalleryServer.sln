@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryServer", "GalleryServer\GalleryServer.csproj", "{23D90DAE-8F75-4D3E-93C0-2DBC6A5D2187}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EB3F10B1-C0F5-471F-B3D9-2D92E41806A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23D90DAE-8F75-4D3E-93C0-2DBC6A5D2187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D90DAE-8F75-4D3E-93C0-2DBC6A5D2187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D90DAE-8F75-4D3E-93C0-2DBC6A5D2187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D90DAE-8F75-4D3E-93C0-2DBC6A5D2187}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3F10B1-C0F5-471F-B3D9-2D92E41806A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3F10B1-C0F5-471F-B3D9-2D92E41806A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3F10B1-C0F5-471F-B3D9-2D92E41806A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3F10B1-C0F5-471F-B3D9-2D92E41806A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E459A0F4-9702-4821-BE36-031E7E182A46}
+	EndGlobalSection
+EndGlobal
